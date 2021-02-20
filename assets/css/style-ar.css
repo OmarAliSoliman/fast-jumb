@@ -746,6 +746,24 @@ footer .copy h5 {
   footer .footer-contact {
     margin-top: 40px;
   }
+  .navbar-light .navbar-toggler {
+    background-color: #fff;
+  }
+  .navbar-light .navbar-toggler:focus {
+    outline: 0 !important;
+  }
+
+  .navbar .navbar-nav {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .navbar .navbar-nav .active {
+    background-color: #ee4650;
+    border-radius: 5px;
+  }
+  .navbar .navbar-nav .active .nav-link {
+    color: #fff;
+  }
 }
 
 @media (max-width: 524px) {
@@ -761,6 +779,12 @@ footer .copy h5 {
   }
   footer .links {
     margin-top: 40px;
+  }
+  .top-header .lang, .top-header .social {
+    text-align: center;
+  }
+  .top-header .social {
+    margin-top: 10px;
   }
 }
 

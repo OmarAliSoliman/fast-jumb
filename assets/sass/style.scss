@@ -678,6 +678,25 @@ footer {
       margin-top: 40px;
     }
   }
+  .navbar-light .navbar-toggler{
+    background-color: #fff;
+    &:focus{
+      outline: 0 !important;
+    }
+  }
+  .navbar{
+    .navbar-nav{
+      text-align: center;
+      margin-top: 20px;
+      .active{
+        background-color: $mainColor;
+        border-radius: 5px;
+        .nav-link{
+          color: #fff;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 524px) {
@@ -698,6 +717,14 @@ footer {
   footer{
     .links{
       margin-top: 40px;
+    }
+  }
+  .top-header{
+    .lang, .social{
+      text-align: center;
+    }
+    .social{
+      margin-top: 10px;
     }
   }
 }
