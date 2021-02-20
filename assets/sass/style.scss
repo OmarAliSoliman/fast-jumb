@@ -48,19 +48,22 @@ img {
   margin-top: 50px;
 }
 .pagination {
-  position: absolute;
-  left: 50%;
+  // position: absolute;
+  // left: 50%;
   // width: 100%;
   overflow: auto;
-  transform: translate(-50%, 0);
+  margin-top: 90px;
+  margin-bottom: 90px;
+  // transform: translate(-50%, 0);
   .page-item {
     .page-link {
       border: 0;
-      background-color: #f7f7f7;
+      background-color: transparent;
       color: #000;
       font-size: 14px;
       margin: 5px;
-      border-radius: 50%;
+      border: 1px solid #c4c1c1;
+      // border-radius: 50%;
     }
     .active {
       background-color: $mainColor;
@@ -443,6 +446,108 @@ img {
           color: $mainColor;
         }
       }
+    }
+  }
+}
+
+.path{
+  background-image: url('../images/path.png');
+  height: 245px;
+  @extend %imgAsBackGround;
+  text-align: center;
+  padding-top: 90px;
+  h5{
+    color: #fff;
+    font-size: 24px;
+  }
+  .links{
+    a{
+      color: #fff;
+      font-size: 14px;
+      &::after{
+        content: "/";
+        margin-left: 3px;
+      }
+      &:last-child{
+        &::after{
+          content: "" !important; 
+        }
+      }
+    }
+  }
+}
+
+.services-details{
+  margin-top: 83px;
+  h5{
+    font-size: 24px;
+  }
+  .authur{
+    font-size: 14px;
+    color: #435179;
+    margin-bottom: 30px;
+  }
+  p{
+    font-size: 14px;
+    line-height: 28px;
+    color: #494949;
+  }
+}
+
+.share{
+  margin-top: 75px;
+  margin-bottom: 90px;
+  .share-header{
+    font-size: 13px;
+  }
+  a{
+    width: 58px;
+    height: 22px;
+    border: 1px solid #E5E5E5;
+    border-radius: 2px;
+    display: inline-block;
+    text-align: center;
+    margin-left: 5px;
+    line-height: 22px;
+    text-decoration: none;
+    margin-bottom: 10px;
+  }
+  i{
+    font-size: 12px;
+  }
+  .fa-facebook-f{
+    color: #408DE4;
+  }
+  .fa-twitter{
+    color: #63BBDF;
+  }
+  .fa-pinterest-p{
+    color: #C01617;
+  }
+  span{
+    font-size: 10px;
+  }
+}
+
+.unevirsity-details{
+  margin-top: 83px;
+  h5{
+    font-size: 24px;
+  }
+  .authur{
+    font-size: 14px;
+    color: #435179;
+    margin-bottom: 30px;
+  }
+  p{
+    font-size: 14px;
+    line-height: 28px;
+    color: #494949;
+  }
+  .un-img{
+    margin-bottom: 30px;
+    img{
+      max-height: 450px;
     }
   }
 }

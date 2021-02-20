@@ -39,18 +39,17 @@ img {
 }
 
 .pagination {
-  position: absolute;
-  left: 50%;
   overflow: auto;
-  transform: translate(-50%, 0);
+  margin-top: 90px;
+  margin-bottom: 90px;
 }
 .pagination .page-item .page-link {
   border: 0;
-  background-color: #f7f7f7;
+  background-color: transparent;
   color: #000;
   font-size: 14px;
   margin: 5px;
-  border-radius: 50%;
+  border: 1px solid #c4c1c1;
 }
 .pagination .page-item .active {
   background-color: #ee4650;
@@ -419,6 +418,103 @@ img {
   color: #ee4650;
 }
 
+.path {
+  background-image: url("../images/path.png");
+  height: 245px;
+  text-align: center;
+  padding-top: 90px;
+}
+.path h5 {
+  color: #fff;
+  font-size: 24px;
+}
+.path .links a {
+  color: #fff;
+  font-size: 14px;
+}
+.path .links a::after {
+  content: "/";
+  margin-left: 3px;
+}
+.path .links a:last-child::after {
+  content: "" !important;
+}
+
+.services-details {
+  margin-top: 83px;
+}
+.services-details h5 {
+  font-size: 24px;
+}
+.services-details .authur {
+  font-size: 14px;
+  color: #435179;
+  margin-bottom: 30px;
+}
+.services-details p {
+  font-size: 14px;
+  line-height: 28px;
+  color: #494949;
+}
+
+.share {
+  margin-top: 75px;
+  margin-bottom: 90px;
+}
+.share .share-header {
+  font-size: 13px;
+}
+.share a {
+  width: 58px;
+  height: 22px;
+  border: 1px solid #E5E5E5;
+  border-radius: 2px;
+  display: inline-block;
+  text-align: center;
+  margin-left: 5px;
+  line-height: 22px;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+.share i {
+  font-size: 12px;
+}
+.share .fa-facebook-f {
+  color: #408DE4;
+}
+.share .fa-twitter {
+  color: #63BBDF;
+}
+.share .fa-pinterest-p {
+  color: #C01617;
+}
+.share span {
+  font-size: 10px;
+}
+
+.unevirsity-details {
+  margin-top: 83px;
+}
+.unevirsity-details h5 {
+  font-size: 24px;
+}
+.unevirsity-details .authur {
+  font-size: 14px;
+  color: #435179;
+  margin-bottom: 30px;
+}
+.unevirsity-details p {
+  font-size: 14px;
+  line-height: 28px;
+  color: #494949;
+}
+.unevirsity-details .un-img {
+  margin-bottom: 30px;
+}
+.unevirsity-details .un-img img {
+  max-height: 450px;
+}
+
 footer {
   background-color: #20323e;
   padding-top: 130px;
@@ -572,7 +668,7 @@ footer .copy h5 {
     padding-bottom: 50px;
   }
 }
-.header, .we-are .we-are-img, .contact {
+.header, .we-are .we-are-img, .contact, .path {
   background-size: cover;
   background-position: center;
 }
